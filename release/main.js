@@ -20,9 +20,28 @@ const values = {
 
 /*jshint esversion: 6 */
 const userName = prompt("Hello, what's your name?");
-const phoneNumber = prompt("Hello " + userName + ", what's your phone number?");
 
-let output = "<h1>Hello, " + userName + "!</h1>";
+if (!userName) {
+  prompt("You didn't enter a name. Really, what's your name?");
+}
+
+switch (userName) {
+  case "Hannah":
+    greeting = "Hi, ";
+    break;
+  case "Grace":
+    greeting = "What are you doing here,";
+    break;
+  default:
+    greeting = "Hello ";
+    break;
+}
+
+const phoneNumber = prompt(
+  "Hello, " + userName + ", what's your mobile number?"
+);
+
+let output = "<h1>" + greeting + userName + "!</h1>";
 
 const phoneNumberPattern = /(?:\+?61|0)\s?4\s?[\d]{2}[\-\s]?\d{3}[\-\s]?\d{3}/;
 
@@ -41,4 +60,9 @@ if (phoneNumberPattern.test(phoneNumber)) {
     output + "<h2>That phone number is invalid: " + phoneNumber + "</h2>";
 }
 
-document.body.innerHTML = output;
+// console.log(output);
+// document.body.innerHTML = output;
+
+/*jshint esversion: 6 */
+const icons = document.querySelectorAll("h1.Icon--bird");
+console.log("icons", icons);

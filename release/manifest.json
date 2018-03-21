@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["*://twitter.com/*"],
-      "js": ["js/values.js", "js/prompt.js"]
+      "js": ["release/main.js"]
     }
   ]
 }
