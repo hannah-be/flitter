@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const projectName = "flitter";
 const versionNumber = "0.0.1";
 const currentDate = new Date();

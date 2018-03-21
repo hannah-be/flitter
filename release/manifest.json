@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "flitter",
+  "description": "Replace the twitter bird with a flower",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["js/values.js", "js/prompt.js"]
+    }
+  ]
+}

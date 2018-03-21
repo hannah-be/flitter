@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const projectName = "flitter";
 const versionNumber = "0.0.1";
 const currentDate = new Date();
@@ -15,6 +16,7 @@ const currentTime =
   ":" +
   currentDate.getSeconds();
 
+/*jshint esversion: 6 */
 const userName = prompt("Hello, what's your name?");
 document.body.innerHTML =
   "<h1>Hello, " +
