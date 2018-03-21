@@ -1,0 +1,6 @@
+{
+  "manifest_version": 2,
+  "name": "flitter",
+  "description": "Replace the twitter bird with a flower",
+  "version": "0.0.1"
+}
