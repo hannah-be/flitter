@@ -1,20 +1,22 @@
 /*jshint esversion: 6 */
-const projectName = "flitter";
-const versionNumber = "0.0.1";
 const currentDate = new Date();
 
-const currentTime =
-  currentDate.getFullYear() +
-  "-" +
-  (currentDate.getMonth() + 1) +
-  "-" +
-  currentDate.getDate() +
-  " at " +
-  currentDate.getHours() +
-  ":" +
-  currentDate.getMinutes() +
-  ":" +
-  currentDate.getSeconds();
+const values = {
+  projectName: "flitter",
+  versionNumber: "0.0.1",
+  currentTime:
+    currentDate.getFullYear() +
+    "-" +
+    (currentDate.getMonth() + 1) +
+    "-" +
+    currentDate.getDate() +
+    " at " +
+    currentDate.getHours() +
+    ":" +
+    currentDate.getMinutes() +
+    ":" +
+    currentDate.getSeconds()
+};
 
 /*jshint esversion: 6 */
 const userName = prompt("Hello, what's your name?");
@@ -23,9 +25,9 @@ document.body.innerHTML =
   userName +
   "!</h1>" +
   "<p>" +
-  projectName +
+  values.projectName +
   " " +
-  versionNumber +
+  values.versionNumber +
   " accessed on: " +
-  currentTime +
+  values.currentTime +
   "</p>";

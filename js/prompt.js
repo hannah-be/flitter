@@ -5,9 +5,9 @@ document.body.innerHTML =
   userName +
   "!</h1>" +
   "<p>" +
-  projectName +
+  values.projectName +
   " " +
-  versionNumber +
+  values.versionNumber +
   " accessed on: " +
-  currentTime +
+  values.currentTime +
   "</p>";
