@@ -2,7 +2,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     concat: {
       release: {
-        src: ["js/values.js", "js/prompt.js", "js/getIcons.js"],
+        src: [
+          "js/values.js",
+          "js/prompt.js",
+          "js/getAvatars.js",
+          "js/replaceAvatars.js",
+          "js/main.js"
+        ],
         dest: "release/main.js"
       }
     },
@@ -13,7 +19,13 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ["js/values.js", "js/prompt.js", "js/getIcons.js"]
+      files: [
+        "js/values.js",
+        "js/prompt.js",
+        "js/getAvatars.js",
+        "js/replaceAvatars.js",
+        "js/main.js"
+      ]
     },
     watch: {
       files: ["<%= jshint.files %>", "manifest.json"],
