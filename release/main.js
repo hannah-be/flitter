@@ -49,10 +49,8 @@ const validatePhoneNumber = phoneNumber => {
 
 /*jshint esversion: 6 */
 
-let output = document.querySelectorAll("img.avatar");
-
 const getAvatars = () => {
-  return output;
+  return document.querySelectorAll("img.avatar");
 };
 
 // document.body.innerHTML = getAvatars();
@@ -67,14 +65,14 @@ const getAvatarWidth = avatar => {
 };
 
 const replaceAvatars = avatars => {
-  const baseImageUrl = "https://www.placepuppy.net/";
+  const baseImageUrl = "https://placeimg.com/";
   let height, width, avatar;
   for (let i = 0; i < avatars.length; i++) {
     avatar = avatars[i];
     height = getAvatarHeight(avatar);
     width = getAvatarWidth(avatar);
     if (height && width) {
-      avatar.src = baseImageUrl + height + "/" + width;
+      avatar.src = baseImageUrl + height + "/" + width + "/nature";
     }
   }
 };
@@ -84,7 +82,6 @@ const main = () => {
   const userName = getUserName();
   const phoneNumber = getPhoneNumber(userName);
   let images = getAvatars();
-  replaceAvatars(images);
 
   setInterval(() => {
     images = getAvatars();

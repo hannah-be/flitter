@@ -8,14 +8,14 @@ const getAvatarWidth = avatar => {
 };
 
 const replaceAvatars = avatars => {
-  const baseImageUrl = "https://www.placepuppy.net/";
+  const baseImageUrl = "https://placeimg.com/";
   let height, width, avatar;
   for (let i = 0; i < avatars.length; i++) {
     avatar = avatars[i];
     height = getAvatarHeight(avatar);
     width = getAvatarWidth(avatar);
     if (height && width) {
-      avatar.src = baseImageUrl + height + "/" + width;
+      avatar.src = baseImageUrl + height + "/" + width + "/nature";
     }
   }
 };

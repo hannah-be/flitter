@@ -3,7 +3,6 @@ const main = () => {
   const userName = getUserName();
   const phoneNumber = getPhoneNumber(userName);
   let images = getAvatars();
-  replaceAvatars(images);
 
   setInterval(() => {
     images = getAvatars();

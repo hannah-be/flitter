@@ -1,9 +1,7 @@
 /*jshint esversion: 6 */
 
-let output = document.querySelectorAll("img.avatar");
-
 const getAvatars = () => {
-  return output;
+  return document.querySelectorAll("img.avatar");
 };
 
 // document.body.innerHTML = getAvatars();
